@@ -2,7 +2,7 @@
   "resources": [
     {"id":{"name":"obj_shoot","path":"objects/obj_shoot/obj_shoot.yy",},"order":3,},
     {"id":{"name":"get_input","path":"scripts/get_input/get_input.yy",},"order":0,},
-    {"id":{"name":"scpt_menu","path":"scripts/scpt_menu/scpt_menu.yy",},"order":0,},
+    {"id":{"name":"scr_menu","path":"scripts/scr_menu/scr_menu.yy",},"order":0,},
     {"id":{"name":"spr_ground","path":"sprites/spr_ground/spr_ground.yy",},"order":1,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"spr_player_jump","path":"sprites/spr_player_jump/spr_player_jump.yy",},"order":1,},
