@@ -10,7 +10,7 @@ function get_input() {
 
 	k_right = keyboard_check(vk_right)
 
-	k_shoot = keyboard_check_pressed(ord("X"))
+	k_bomb = keyboard_check_pressed(ord("X"))
 
 #endregion
 

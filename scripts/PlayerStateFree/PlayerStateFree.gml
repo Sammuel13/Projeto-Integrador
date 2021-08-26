@@ -35,26 +35,9 @@ function PlayerStateFree() {
 		if air_jump == 1 and k_jump_air{
 			vspd = -jump
 			air_jump--
+			script_execute(shoot)
 		}		
 	}
-#endregion
-
-#region shoot
-
-	var flipped = direction
-	var gun_x = x + 4 * flipped
-	var _xx = x + lengthdir_x(20, image_angle)
-	var y_offset = lengthdir_y(-20, image_angle)
-
-	if k_shoot{
-		with (instance_create_layer(_xx, y + 10, "Shoot", obj_shoot)){
-			speed = 20
-			direction = -90 + 90 * other.image_xscale
-			image_angle = direction
-		
-		}
-	}
-
 #endregion
 
 #region animation
