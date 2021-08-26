@@ -1,6 +1,17 @@
 {
   "resources": [
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+    {"id":{"name":"get_input","path":"scripts/get_input/get_input.yy",},"order":0,},
+    {"id":{"name":"spr_ground","path":"sprites/spr_ground/spr_ground.yy",},"order":1,},
+    {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
+    {"id":{"name":"spr_player_jump","path":"sprites/spr_player_jump/spr_player_jump.yy",},"order":1,},
+    {"id":{"name":"spr_player_running","path":"sprites/spr_player_running/spr_player_running.yy",},"order":3,},
+    {"id":{"name":"PlayerStateHit","path":"scripts/PlayerStateHit/PlayerStateHit.yy",},"order":2,},
+    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":1,},
+    {"id":{"name":"PlayerStateFree","path":"scripts/PlayerStateFree/PlayerStateFree.yy",},"order":1,},
+    {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},"order":2,},
+    {"id":{"name":"spr_player_fall","path":"sprites/spr_player_fall/spr_player_fall.yy",},"order":0,},
+    {"id":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},"order":2,},
+    {"id":{"name":"room0","path":"rooms/room0/room0.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Main","path":"options/main/options_main.yy",},
@@ -14,7 +25,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"room0","path":"rooms/room0/room0.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -31,6 +42,8 @@
     {"folderPath":"folders/Animation Curves.yy","order":12,"resourceVersion":"1.0","name":"Animation Curves","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Notes.yy","order":13,"resourceVersion":"1.0","name":"Notes","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Extensions.yy","order":14,"resourceVersion":"1.0","name":"Extensions","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts/Player.yy","order":2,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Player.yy","order":2,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
