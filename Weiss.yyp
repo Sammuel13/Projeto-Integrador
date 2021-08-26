@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"obj_shoot","path":"objects/obj_shoot/obj_shoot.yy",},"order":3,},
     {"id":{"name":"get_input","path":"scripts/get_input/get_input.yy",},"order":0,},
+    {"id":{"name":"scpt_menu","path":"scripts/scpt_menu/scpt_menu.yy",},"order":0,},
     {"id":{"name":"spr_ground","path":"sprites/spr_ground/spr_ground.yy",},"order":1,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"spr_player_jump","path":"sprites/spr_player_jump/spr_player_jump.yy",},"order":1,},
@@ -45,8 +46,9 @@
     {"folderPath":"folders/Animation Curves.yy","order":12,"resourceVersion":"1.0","name":"Animation Curves","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Notes.yy","order":13,"resourceVersion":"1.0","name":"Notes","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Extensions.yy","order":14,"resourceVersion":"1.0","name":"Extensions","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Scripts/Player.yy","order":2,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts/Player.yy","order":0,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Player.yy","order":2,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts/Menu.yy","order":1,"resourceVersion":"1.0","name":"Menu","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
