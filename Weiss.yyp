@@ -11,9 +11,13 @@
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":1,},
     {"id":{"name":"PlayerStateFree","path":"scripts/PlayerStateFree/PlayerStateFree.yy",},"order":1,},
     {"id":{"name":"shoot","path":"scripts/shoot/shoot.yy",},"order":3,},
+    {"id":{"name":"spr_start","path":"sprites/spr_start/spr_start.yy",},"order":1,},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},"order":2,},
+    {"id":{"name":"spr_menu","path":"sprites/spr_menu/spr_menu.yy",},"order":0,},
     {"id":{"name":"spr_player_fall","path":"sprites/spr_player_fall/spr_player_fall.yy",},"order":0,},
     {"id":{"name":"spr_shoot","path":"sprites/spr_shoot/spr_shoot.yy",},"order":4,},
+    {"id":{"name":"menu","path":"rooms/menu/menu.yy",},"order":1,},
+    {"id":{"name":"obj_start","path":"objects/obj_start/obj_start.yy",},"order":4,},
     {"id":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},"order":2,},
     {"id":{"name":"room0","path":"rooms/room0/room0.yy",},"order":0,},
   ],
@@ -29,6 +33,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"menu","path":"rooms/menu/menu.yy",},},
     {"roomId":{"name":"room0","path":"rooms/room0/room0.yy",},},
   ],
   "Folders": [
@@ -49,6 +54,7 @@
     {"folderPath":"folders/Scripts/Player.yy","order":0,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Player.yy","order":2,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/Menu.yy","order":1,"resourceVersion":"1.0","name":"Menu","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Menu.yy","order":3,"resourceVersion":"1.0","name":"Menu","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
