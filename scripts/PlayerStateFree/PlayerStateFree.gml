@@ -38,6 +38,11 @@ function PlayerStateFree() {
 			script_execute(shoot)
 		}		
 	}
+	
+	if k_bomb {
+		script_execute(bomb)
+	}
+	
 #endregion
 
 #region animation

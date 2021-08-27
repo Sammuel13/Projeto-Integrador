@@ -1,0 +1,1 @@
+while bomb_cooldown > 0 { bomb_cooldown -= 1 }
