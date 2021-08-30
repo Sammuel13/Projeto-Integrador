@@ -12,6 +12,8 @@ function get_input() {
 
 	k_bomb = keyboard_check_pressed(ord("X"))
 	
+	k_run = keyboard_check(vk_lshift)
+	
 	key_pause = keyboard_check_pressed(vk_escape)
 
 #endregion

@@ -42,6 +42,12 @@ function PlayerStateFree() {
 	if k_bomb {
 		script_execute(bomb)
 	}
+		
+	if k_run {
+		spd = 10
+	} else {
+		spd = 5
+	}
 	
 #endregion
 
