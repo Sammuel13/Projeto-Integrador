@@ -2,9 +2,9 @@ function get_input() {
 	
 #region controlls
 
-	k_jump = keyboard_check(ord("Z"))
+	k_jump = keyboard_check(vk_space)
 	
-	k_jump_air = keyboard_check_pressed(ord("Z"))
+	k_jump_air = keyboard_check_pressed(vk_space)
 
 	k_left = keyboard_check(vk_left)
 
@@ -12,7 +12,7 @@ function get_input() {
 
 	k_bomb = keyboard_check_pressed(ord("X"))
 	
-	k_run = keyboard_check(vk_lshift)
+	k_run = keyboard_check(ord("Z"))
 	
 	key_pause = keyboard_check_pressed(vk_escape)
 
