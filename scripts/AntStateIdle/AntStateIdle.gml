@@ -11,7 +11,7 @@ script_execute(get_input)
 		while (!place_meeting(x + sign(hspd), y, obj_ground)){
 			x = x + sign(hspd)
 		}
-		hspd = 0
+		hspd = hspd * -1
 	}
 	x = x + hspd
 
