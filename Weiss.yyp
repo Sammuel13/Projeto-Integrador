@@ -34,7 +34,9 @@
     {"id":{"name":"spr_bmenu","path":"sprites/spr_bmenu/spr_bmenu.yy",},"order":5,},
     {"id":{"name":"bomb","path":"scripts/bomb/bomb.yy",},"order":4,},
     {"id":{"name":"spr_menu","path":"sprites/spr_menu/spr_menu.yy",},"order":0,},
+    {"id":{"name":"AntStateIdle","path":"scripts/AntStateIdle/AntStateIdle.yy",},"order":0,},
     {"id":{"name":"spr_player_fall","path":"sprites/spr_player_fall/spr_player_fall.yy",},"order":0,},
+    {"id":{"name":"AntStateFreeze","path":"scripts/AntStateFreeze/AntStateFreeze.yy",},"order":1,},
     {"id":{"name":"spr_shoot","path":"sprites/spr_shoot/spr_shoot.yy",},"order":4,},
     {"id":{"name":"obj_spider","path":"objects/obj_spider/obj_spider.yy",},"order":2,},
     {"id":{"name":"obj_game","path":"objects/obj_game/obj_game.yy",},"order":4,},
@@ -91,6 +93,7 @@
     {"folderPath":"folders/Objects/Itens.yy","order":6,"resourceVersion":"1.0","name":"Itens","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Hud.yy","order":6,"resourceVersion":"1.0","name":"Hud","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Hud.yy","order":7,"resourceVersion":"1.0","name":"Hud","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts/Ant.yy","order":2,"resourceVersion":"1.0","name":"Ant","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
