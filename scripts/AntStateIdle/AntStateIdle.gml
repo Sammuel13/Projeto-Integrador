@@ -27,6 +27,4 @@ script_execute(get_input)
 #endregion
 
 if (hspd != 0) {image_xscale = sign(hspd)}
-
-hspd = 5
 }
