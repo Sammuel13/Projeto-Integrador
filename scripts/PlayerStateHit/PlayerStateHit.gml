@@ -1,7 +1,10 @@
 function PlayerStateHit() {
+	
 #region movement
 
 	var move = k_right - k_left
+
+	hspd = move * spd
 
 	vspd = vspd + global.grv
 
@@ -21,45 +24,51 @@ function PlayerStateHit() {
 	}
 	y = y + vspd
 
-	if place_meeting(x, y + 1, obj_ground) and k_jump{
-		vspd -= jump
+	if place_meeting(x, y + 1, obj_ground){
+		air_jump = 1
+		if k_jump{
+			vspd -= jump
+		}
 	}
-
+	else{
+		if air_jump == 1 and k_jump_air{
+			vspd = -jump
+			air_jump--
+			script_execute(shoot)
+		}		
+	}
+	
+	if k_bomb {
+		script_execute(bomb)
+	}
+		
+	if k_run {
+		spd = 10
+	} else {
+		spd = 5
+	}
+	
 #endregion
 
 	if cooldown > 60 {
-		sprite_index = spr_player_hit
+		sprite_index = spr_player_fall
 		vspd -= 0.2
 	}
 
 	if cooldown == 120 {
-		hspd = hspd * -0.5
+		hspd = hspd * -1
+		hspd = hspd / 2
 		vspd = -6
+		if global.life == 1 {cooldown =0}
 		global.life--
+		
+		
 	}
 
 	if cooldown <= 60{
 		script_execute(get_input)
 	
 		hspd = move * spd
-	
-	#region shoot
-
-		var flipped = direction
-		var gun_x = x + 4 * flipped
-		var _xx = x + lengthdir_x(20, image_angle)
-		var y_offset = lengthdir_y(-20, image_angle)
-
-		if k_shoot{
-			with (instance_create_layer(_xx, y + 10, "Shoot", obj_shoot)){
-				speed = 20
-				direction = -90 + 90 * other.image_xscale
-				image_angle = direction
-		
-			}
-		}
-
-	#endregion
 
 	#region animation
 
@@ -94,8 +103,6 @@ function PlayerStateHit() {
 	}
 
 	if cooldown <= 0 {state = PlayerState.FREE}
-
-	show_debug_message(hspd)
 
 	cooldown--
 

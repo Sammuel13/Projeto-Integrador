@@ -1,17 +1,15 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function AntStateIdle(){
-script_execute(get_input)
+function BeeStateAttack() {
+	script_execute(get_input)
 
 #region movement
 
-	vspd = vspd + global.grv
+	vspd = 0
 
 	if place_meeting(x + hspd, y, obj_ground){
 		while (!place_meeting(x + sign(hspd), y, obj_ground)){
 			x = x + sign(hspd)
 		}
-		hspd = hspd * -1
+		hspd = 0
 	}
 	x = x + hspd
 
@@ -22,9 +20,18 @@ script_execute(get_input)
 		vspd = 0
 	}
 	y = y + vspd
-	
-	
+
 #endregion
 
-if (hspd != 0) {image_xscale = -sign(hspd)}
+	hspd = 0
+
+	sprite_index = spr_bee_attack
+
+	if (image_index > image_number - 1){
+		image_xscale = sign(- obj_bee.x + obj_player.x)
+		state = BeeState.IDLE
+	}
+
+
+
 }

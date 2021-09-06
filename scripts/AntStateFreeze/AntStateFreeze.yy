@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Ant",
-    "path": "folders/Scripts/Ant.yy",
+    "path": "folders/Scripts/Enemy/Ant.yy",
   },
   "resourceVersion": "1.0",
   "name": "AntStateFreeze",
