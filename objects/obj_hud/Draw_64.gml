@@ -30,3 +30,8 @@ else{
 	draw_sprite(spr_lifes,2,175,55); // < 5 de vida
 }
 #endregion
+#region score
+placar = string(global.score);
+draw_sprite(spr_score, 1, 75, 100);
+draw_text(100, 100, placar);
+#endregion

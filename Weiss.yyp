@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"BeeStateIdle","path":"scripts/BeeStateIdle/BeeStateIdle.yy",},"order":0,},
     {"id":{"name":"obj_ant","path":"objects/obj_ant/obj_ant.yy",},"order":0,},
+    {"id":{"name":"fruit","path":"objects/fruit/fruit.yy",},"order":2,},
     {"id":{"name":"obj_shoot","path":"objects/obj_shoot/obj_shoot.yy",},"order":1,},
     {"id":{"name":"spr_bomb","path":"sprites/spr_bomb/spr_bomb.yy",},"order":5,},
     {"id":{"name":"spr_options","path":"sprites/spr_options/spr_options.yy",},"order":1,},
@@ -25,6 +26,7 @@
     {"id":{"name":"tree2","path":"sprites/tree2/tree2.yy",},"order":1,},
     {"id":{"name":"tree1","path":"sprites/tree1/tree1.yy",},"order":0,},
     {"id":{"name":"tree4","path":"sprites/tree4/tree4.yy",},"order":3,},
+    {"id":{"name":"spr_score","path":"sprites/spr_score/spr_score.yy",},"order":1,},
     {"id":{"name":"spr_recover","path":"sprites/spr_recover/spr_recover.yy",},"order":0,},
     {"id":{"name":"spr_ant","path":"sprites/spr_ant/spr_ant.yy",},"order":0,},
     {"id":{"name":"PlayerStateHit","path":"scripts/PlayerStateHit/PlayerStateHit.yy",},"order":2,},
