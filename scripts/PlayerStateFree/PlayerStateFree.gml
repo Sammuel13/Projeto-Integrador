@@ -36,6 +36,7 @@ function PlayerStateFree() {
 			vspd = -jump
 			air_jump--
 			script_execute(shoot)
+			//script_execute(homming)
 		}		
 	}
 	

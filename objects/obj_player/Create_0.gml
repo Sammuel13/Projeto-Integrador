@@ -5,7 +5,7 @@ global.grv = 0.6
 jump = 15
 air_jump = 1
 cooldown = 30
-global.life = 5
+global.life = 5 //por enquanto
 global.score = 0
 
 state = PlayerState.FREE

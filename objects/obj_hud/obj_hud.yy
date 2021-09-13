@@ -23,8 +23,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Hud",
-    "path": "folders/Objects/Hud.yy",
+    "name": "Game",
+    "path": "folders/Objects/Game.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_hud",
