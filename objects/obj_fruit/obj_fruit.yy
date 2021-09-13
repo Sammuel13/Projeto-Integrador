@@ -30,7 +30,7 @@
     "path": "folders/Objects/Itens.yy",
   },
   "resourceVersion": "1.0",
-  "name": "fruit",
+  "name": "obj_fruit",
   "tags": [],
   "resourceType": "GMObject",
 }
