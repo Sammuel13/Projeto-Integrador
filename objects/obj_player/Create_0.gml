@@ -13,4 +13,5 @@ state = PlayerState.FREE
 enum PlayerState{
 	FREE,
 	HIT,
+	HOMING,
 }

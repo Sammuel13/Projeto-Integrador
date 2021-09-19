@@ -33,10 +33,11 @@ function PlayerStateFree() {
 	}
 	else{
 		if air_jump == 1 and k_jump_air{
-			vspd = -jump
+			//vspd = -jump
 			air_jump--
-			script_execute(shoot)
-			//script_execute(homming)
+			//script_execute(shoot)
+			state = PlayerState.HOMING
+			show_debug_message("done")
 		}		
 	}
 	

@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Player.yy",
   },
   "resourceVersion": "1.0",
-  "name": "homming",
+  "name": "PlayerStateHoming",
   "tags": [],
   "resourceType": "GMScript",
 }
