@@ -32,10 +32,9 @@ function PlayerStateFree() {
 		}
 	}
 	else{
-		if air_jump == 1 and k_jump_air{
+		if k_jump_air{
 			alarm[0] = room_speed * 0.5
-			air_jump--
-			
+			nearest = 0
 			xinicial = x
 			yinicial = y
 			state = PlayerState.HOMING

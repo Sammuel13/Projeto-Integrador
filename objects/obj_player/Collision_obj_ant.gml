@@ -1,4 +1,4 @@
-if state != PlayerState.HOMING {
+/*if state != PlayerState.HOMING {
 	
 	hspd = 0
 	vspd = 0
