@@ -27,7 +27,7 @@ function PlayerStateHit() {
 	if place_meeting(x, y + 1, obj_ground){
 		air_jump = 1
 		if k_jump{
-			vspd -= jump
+			vspd = -jump
 		}
 	}
 	else{
@@ -56,9 +56,8 @@ function PlayerStateHit() {
 	}
 
 	if cooldown == 120 {
-		hspd = hspd * -1
-		hspd = hspd / 2
-		vspd = -6
+		hspd *= -15
+		vspd = -jump
 		if global.life == 1 {cooldown =0}
 		global.life--
 		

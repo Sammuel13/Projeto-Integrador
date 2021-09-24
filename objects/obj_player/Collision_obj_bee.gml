@@ -1,8 +1,3 @@
-/*if state != PlayerState.HOMING {
-	
-	hspd = 0
-	vspd = 0
-	
-	state = PlayerState.HIT
-	
-}*/
+if state == PlayerState.HOMING {
+	instance_destroy(other)
+}

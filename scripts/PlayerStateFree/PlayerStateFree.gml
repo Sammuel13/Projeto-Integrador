@@ -1,5 +1,5 @@
 function PlayerStateFree() {
-	script_execute(get_input)
+	get_input()
 
 #region movement
 
@@ -24,33 +24,24 @@ function PlayerStateFree() {
 		vspd = 0
 	}
 	y = y + vspd
+	
+	aim()
 
 	if place_meeting(x, y + 1, obj_ground){
 		air_jump = 1
 		if k_jump{
-			vspd -= jump
+			vspd = -jump
 		}
-	}
-	else{
+	} else {
 		if k_jump_air{
-			alarm[0] = room_speed * 0.5
-			nearest = 0
+			xnearest = nearest.x
+			ynearest = nearest.y
 			xinicial = x
 			yinicial = y
+			alarm[0] = room_speed * 0.5
 			state = PlayerState.HOMING
-
 			show_debug_message("done")
-		}		
-	}
-	
-	if k_bomb {
-		script_execute(bomb)
-	}
-		
-	if k_run {
-		spd = 10
-	} else {
-		spd = 5
+		}
 	}
 	
 #endregion

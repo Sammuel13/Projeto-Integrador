@@ -2,44 +2,29 @@ function PlayerStateHoming(){
 	
 	alarm[0]--;
 	
-	show_debug_message(alarm[0])
+	sprite_index = spr_player_homing
 	
-	if instance_exists(obj_bee) {nearestBee = instance_nearest(x, y, obj_bee)}
-	if instance_exists(obj_ant) {nearestAnt = instance_nearest(x, y, obj_ant)}
-	
-	if instance_exists(obj_bee) && instance_exists(obj_ant) {
-		if point_distance(xinicial,yinicial,nearestAnt.x,nearestAnt.y) < point_distance(xinicial,yinicial,nearestBee.x,nearestBee.y){
-			nearest = instance_nearest(x, y, obj_ant)
-			show_debug_message("formiga, mas tem abelha")
-		} else {
-			nearest = instance_nearest(x, y, obj_bee)
-			show_debug_message("abelha, mas tem formiga")
-		}
-	} else {
-		if instance_exists(obj_bee){
-			nearest = instance_nearest(x, y, obj_bee)
-			show_debug_message("abelha")
-		} else {
-			if instance_exists(obj_ant) {
-				nearest = instance_nearest(x, y, obj_ant)
-				show_debug_message("formiga")
-			} else { if air_jump == 1 { vspd -= jump; air_jump-- }; state = PlayerState.FREE }
-		}
-	}
-	
-	if point_distance(x,y,nearest.x,nearest.y) < 250 && nearest != 0 {
+	if point_distance(x,y,xnearest,ynearest) < 250 {
 
 		if alarm[0] <= 0 {
-			spd = 0
-			state = PlayerState.FREE
+			aim()
+			if point_distance(x,y,nearest.x,nearest.y) < 350 {
+				xnearest = nearest.x
+				ynearest = nearest.y
+				alarm[0] = room_speed * 0.5
+			} else {
+				spd = 0
+				state = PlayerState.FREE
+			}
 		} else {
+			
 			air_jump--
 			xhoming = 0
 			distanciaApos = 5
-			deltax = (nearest.x - xinicial)
-			deltay = (nearest.y - yinicial)
-			xhoming = nearest.x + distanciaApos * deltax
-			yhoming = nearest.y + distanciaApos * deltay
+			deltax = (xnearest - xinicial)
+			deltay = (ynearest - yinicial)
+			xhoming = xnearest + distanciaApos * deltax
+			yhoming = ynearest + distanciaApos * deltay
 			
 			hspd = 0; vspd = 0
 			
@@ -62,11 +47,8 @@ function PlayerStateHoming(){
 				y = newposy
 			}
 			
-			show_debug_message(velx)
-			show_debug_message(vely)
-
 		}
 	
-	} else { if air_jump == 1 { vspd -= jump; air_jump-- }; state = PlayerState.FREE }
+	} else { if air_jump == 1 { vspd = -jump; air_jump-- }; state = PlayerState.FREE }
 
 }

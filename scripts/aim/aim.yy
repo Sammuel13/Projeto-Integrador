@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Player.yy",
   },
   "resourceVersion": "1.0",
-  "name": "bomb",
+  "name": "aim",
   "tags": [],
   "resourceType": "GMScript",
 }
