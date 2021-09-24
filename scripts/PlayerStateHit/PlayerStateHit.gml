@@ -34,18 +34,7 @@ function PlayerStateHit() {
 		if air_jump == 1 and k_jump_air{
 			vspd = -jump
 			air_jump--
-			script_execute(shoot)
 		}		
-	}
-	
-	if k_bomb {
-		script_execute(bomb)
-	}
-		
-	if k_run {
-		spd = 10
-	} else {
-		spd = 5
 	}
 	
 #endregion

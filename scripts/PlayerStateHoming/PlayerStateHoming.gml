@@ -1,21 +1,25 @@
 function PlayerStateHoming(){
 	
-	alarm[0]--;
-	
 	sprite_index = spr_player_homing
+	
+	/*
+	aim()
+		if point_distance(x,y,nearest.x,nearest.y) < 400 {
+			xnearest = nearest.x
+			ynearest = nearest.y
+			xinicial = x
+			yinicial = y
+			alarm[0] = room_speed * 0.5
+		} else {
+	
+	*/
 	
 	if point_distance(x,y,xnearest,ynearest) < 250 {
 
 		if alarm[0] <= 0 {
-			aim()
-			if point_distance(x,y,nearest.x,nearest.y) < 350 {
-				xnearest = nearest.x
-				ynearest = nearest.y
-				alarm[0] = room_speed * 0.5
-			} else {
-				spd = 0
-				state = PlayerState.FREE
-			}
+			hspd = 0
+			state = PlayerState.FREE
+			
 		} else {
 			
 			air_jump--
@@ -49,6 +53,15 @@ function PlayerStateHoming(){
 			
 		}
 	
-	} else { if air_jump == 1 { vspd = -jump; air_jump-- }; state = PlayerState.FREE }
-
+	} else {
+		if air_jump == 1 {
+			vspd = -jump
+			air_jump--
+			state = PlayerState.FREE
+		} else {
+			hspd = 0
+			state = PlayerState.FREE
+		}
+	}
+	alarm[0]--
 }

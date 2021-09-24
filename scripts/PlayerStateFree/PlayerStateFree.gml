@@ -26,7 +26,6 @@ function PlayerStateFree() {
 	y = y + vspd
 	
 	aim()
-
 	if place_meeting(x, y + 1, obj_ground){
 		air_jump = 1
 		if k_jump{
