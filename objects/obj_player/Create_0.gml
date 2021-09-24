@@ -8,6 +8,7 @@ nearest = 0
 cooldown = 30
 global.life = 5 //por enquanto
 global.score = 0
+global.respawn = [x,y,room0]
 
 state = PlayerState.FREE
 

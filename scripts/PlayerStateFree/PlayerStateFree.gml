@@ -76,7 +76,11 @@ function PlayerStateFree() {
 	cooldown = 120
 
 	if global.life < 1{
-		game_restart()
+		global.score = 0;
+		room_goto(global.respawn[2])
+		x = global.respawn[0];
+		y = global.respawn[1];
+		global.life = 5;
 	}
 
 }
