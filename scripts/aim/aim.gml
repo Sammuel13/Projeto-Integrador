@@ -1,6 +1,6 @@
 function aim(){
 	find_nearest2()
-	if instance_exists(nearest){
+	if instance_exists(nearest) && nearest != 0{
 		if point_distance(x,y,nearest.x,nearest.y) > 250 {
 			with(obj_aim) {
 				size = 100

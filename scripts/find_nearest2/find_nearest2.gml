@@ -40,7 +40,7 @@ function find_nearest2(){
 						if instance_exists(obj_ant) { nearest = instance_nearest(x, y, obj_ant)
 						} else {
 							if instance_exists(obj_leaf) { nearest = instance_nearest(x, y, obj_leaf)
-							} else { if air_jump == 1 { vspd -= jump; air_jump-- }; state = PlayerState.FREE }
+							} else { nearest = 0 }
 						}
 					}
 				}
