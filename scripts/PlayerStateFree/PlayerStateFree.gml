@@ -26,6 +26,7 @@ function PlayerStateFree() {
 	y = y + vspd
 	
 	aim()
+	
 	if place_meeting(x, y + 1, obj_ground){
 		air_jump = 1
 		if k_jump{
@@ -33,13 +34,15 @@ function PlayerStateFree() {
 		}
 	} else {
 		if k_jump_air{
-			xnearest = nearest.x
-			ynearest = nearest.y
-			xinicial = x
-			yinicial = y
-			alarm[0] = room_speed * 0.5
-			state = PlayerState.HOMING
-			show_debug_message("done")
+			if isnearest = 0 { vspd = -jump } else {
+				xnearest = nearest.x
+				ynearest = nearest.y
+				xinicial = x
+				yinicial = y
+				alarm[0] = room_speed * 0.5
+				state = PlayerState.HOMING
+				show_debug_message("done")
+			}
 		}
 	}
 	

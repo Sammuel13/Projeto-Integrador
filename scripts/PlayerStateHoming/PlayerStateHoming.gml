@@ -1,22 +1,33 @@
 function PlayerStateHoming(){
 	
 	sprite_index = spr_player_homing
-	
-	/*
 	aim()
-		if point_distance(x,y,nearest.x,nearest.y) < 400 {
-			xnearest = nearest.x
-			ynearest = nearest.y
-			xinicial = x
-			yinicial = y
-			alarm[0] = room_speed * 0.5
-		} else {
 	
-	*/
+	if point_distance(x,y,xnearest,ynearest) < homingdis {
+		homing = 1
+	} else {
+		homing = 0
+	}
 	
-	if point_distance(x,y,xnearest,ynearest) < 250 {
+	if homing == 1 && again == 1 && alarm[0] == 0{
+		find_nearest2()
+		if isnearest == 1 {
+			if point_distance(x,y,nearest.x,nearest.y) < homingdis {
+				xnearest = nearest.x
+				ynearest = nearest.y
+				xinicial = x
+				yinicial = y
+				alarm[0] = room_speed * 0.75
+			}
+		}
+		again += 1
+	}
+
+	
+	if homing == 1 {
 
 		if alarm[0] <= 0 {
+			homingdis = 250
 			hspd = 0
 			state = PlayerState.FREE
 			
@@ -58,9 +69,13 @@ function PlayerStateHoming(){
 			vspd = -jump
 			air_jump--
 			state = PlayerState.FREE
+			again = 0
+			homingdis = 250
 		} else {
 			hspd = 0
 			state = PlayerState.FREE
+			again = 0
+			homingdis = 250
 		}
 	}
 	alarm[0]--
