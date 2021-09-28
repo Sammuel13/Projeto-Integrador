@@ -23,25 +23,33 @@ function PlayerStateHit() {
 		vspd = 0
 	}
 	y = y + vspd
-
+	
+	aim()
+	
 	if place_meeting(x, y + 1, obj_ground){
 		air_jump = 1
 		if k_jump{
 			vspd = -jump
 		}
-	}
-	else{
-		if air_jump == 1 and k_jump_air{
-			vspd = -jump
-			air_jump--
-		}		
+	} else {
+		if k_jump_air{
+			if isnearest = 0 { vspd = -jump } else {
+				xnearest = nearest.x
+				ynearest = nearest.y
+				xinicial = x
+				yinicial = y
+				alarm[0] = room_speed * 0.5
+				state = PlayerState.HOMING
+				show_debug_message("done")
+			}
+		}
 	}
 	
 #endregion
 
 	if cooldown > 60 {
 		sprite_index = spr_player_fall
-		vspd -= 0.2
+		vspd -= 0.4
 	}
 
 	if cooldown == 120 {
@@ -53,7 +61,7 @@ function PlayerStateHit() {
 		
 	}
 
-	if cooldown <= 60{
+	if cooldown <= 90{
 		script_execute(get_input)
 	
 		hspd = move * spd
@@ -86,7 +94,7 @@ function PlayerStateHit() {
 		
 	#endregion
 
-		if cooldown <= 60 and cooldown >= 50 or cooldown <= 40 and cooldown >= 30 or cooldown <= 20 and cooldown >=10 {image_alpha = 0.5}
+		if cooldown <= 80 and cooldown >= 70 or cooldown <= 60 and cooldown >= 50 or cooldown <= 40 and cooldown >= 30 or cooldown <= 20 and cooldown >=10 {image_alpha = 0.5}
 		else {image_alpha = 1}
 	}
 
