@@ -29,20 +29,22 @@ function PlayerStateFree() {
 	
 	if place_meeting(x, y + 1, obj_ground){
 		air_jump = 1
+		dbj = 1
 		if k_jump{
 			vspd = -jump
 		}
 	} else {
-		if k_jump_air{
-			if isnearest = 0 { vspd = -jump } else {
+		if k_jump_air && air_jump == 1 {
+			sprite_index = spr_player_homing
+			change = 0
+			if isnearest == 1 {
 				xnearest = nearest.x
 				ynearest = nearest.y
 				xinicial = x
 				yinicial = y
-				alarm[0] = room_speed * 0.5
-				state = PlayerState.HOMING
-				show_debug_message("done")
 			}
+			alarm[0] = room_speed * 0.5
+			state = PlayerState.HOMING
 		}
 	}
 	
@@ -51,17 +53,27 @@ function PlayerStateFree() {
 #region animation
 
 	if (hspd != 0) {image_xscale = sign(hspd)}
+	
+	if air_jump == 0 {
+		if dbj == 1 { sprite_index = spr_dbjump; dbj-- }
+	}
 
-	if !place_meeting(x, y + 1, obj_ground){
-		if sign(vspd) < 0{
-			sprite_index = spr_player_jump
-		}
-		else {
-			sprite_index = spr_player_fall
+	if !place_meeting(x, y + 1, obj_ground) {
+		if sprite_index == spr_dbjump {
+			if image_index > image_number - 1 {
+				sprite_index = spr_player_jump
+			}
+		} else {
+			if sign(vspd) < 0 {
+				sprite_index = spr_player_jump
+			} else {
+				sprite_index = spr_player_fall
+			}
 		}
 	}
-	else{
-		if hspd != 0 and place_meeting(x, y + 1, obj_ground){
+	
+	else {
+		if hspd != 0 and place_meeting(x, y + 1, obj_ground) {
 			sprite_index = spr_player_running
 		}
 	}
