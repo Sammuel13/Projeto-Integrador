@@ -48,7 +48,7 @@ function PlayerStateHit() {
 #endregion
 
 	if cooldown > 60 {
-		sprite_index = spr_player_fall
+		sprite_index = spr_hit
 		vspd -= 0.4
 	}
 

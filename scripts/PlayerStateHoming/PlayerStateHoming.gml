@@ -1,6 +1,9 @@
 function PlayerStateHoming(){
 	
-	sprite_index = spr_player_homing
+	if sprite_index == spr_player_homing && image_index > image_number - 1 {change = 1}
+	if change == 2 && sprite_index != spr_player_fall {sprite_index = spr_player_homing1}
+	if change == 3 && sprite_index != spr_player_fall {sprite_index = spr_player_homing2}
+
 	aim()
 	
 	if point_distance(x,y,xnearest,ynearest) < homingdis {
@@ -43,10 +46,12 @@ function PlayerStateHoming(){
 			
 			hspd = 0; vspd = 0
 			
+			change = 2
 			velx = spd * 3
 			vely = velx * abs(deltay/deltax)
 			
 			if vely > 15 {
+				change = 3
 				vely = spd * 3
 				velx = vely * abs(deltax/deltay)
 			}
