@@ -10,5 +10,5 @@ if (mouse_over == true)
 
 if (mouse_over == true && click == true) 
 {
-	
+	room_goto(rm_options)
 }
