@@ -42,9 +42,9 @@ function PlayerStateFree() {
 				ynearest = nearest.y
 				xinicial = x
 				yinicial = y
-			}
+				state = PlayerState.HOMING
+			} else { vspd = -jump; air_jump-- }
 			alarm[0] = room_speed * 0.5
-			state = PlayerState.HOMING
 		}
 	}
 	
