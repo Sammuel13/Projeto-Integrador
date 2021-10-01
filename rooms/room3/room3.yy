@@ -239,6 +239,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"destroy_leaf","path":"objects/destroy_leaf/destroy_leaf.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3136.0,"y":800.0,"resourceVersion":"1.0","name":"inst_59E9E920","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"destroy_leaf","path":"objects/destroy_leaf/destroy_leaf.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3520.0,"y":800.0,"resourceVersion":"1.0","name":"inst_27458966","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"destroy_leaf","path":"objects/destroy_leaf/destroy_leaf.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3904.0,"y":800.0,"resourceVersion":"1.0","name":"inst_4D8F80B5","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"room_info","path":"objects/room_info/room_info.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":96.0,"y":96.0,"resourceVersion":"1.0","name":"inst_75AF121A","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_recover","path":"objects/obj_recover/obj_recover.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":true,"inheritItemSettings":false,"x":576.0,"y":960.0,"resourceVersion":"1.0","name":"inst_D796FB5","tags":[],"resourceType":"GMRInstance",},
@@ -335,6 +336,7 @@
     {"name":"inst_59E9E920","path":"rooms/room3/room3.yy",},
     {"name":"inst_27458966","path":"rooms/room3/room3.yy",},
     {"name":"inst_4D8F80B5","path":"rooms/room3/room3.yy",},
+    {"name":"inst_75AF121A","path":"rooms/room3/room3.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
