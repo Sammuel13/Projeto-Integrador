@@ -25,13 +25,14 @@ function BeeStateAttack() {
 
 	hspd = 0
 
-	sprite_index = spr_bee_attack
-
 	if (image_index > image_number - 1){
 		image_xscale = sign(- obj_bee.x + obj_player.x)
 		state = BeeState.IDLE
 	}
 
-
+	//if (distance_to_object(obj_player) < 50){
+		sprite_index = spr_bee_attack
+		//mp_potential_step(obj_player.x, obj_player.y, spd, true)
+	//}
 
 }
