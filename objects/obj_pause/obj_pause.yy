@@ -29,7 +29,7 @@
     "path": "folders/Objects/Game.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_game",
+  "name": "obj_pause",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -10,7 +10,7 @@ if key_pause{
 		room_previous(room)
 		room_goto(pause)
 	} else {
-		room_goto_previous();
+		room_goto(global.room_atual);
 		instance_deactivate_all(true);
 	}
 }
