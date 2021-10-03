@@ -4,4 +4,5 @@ switch (state){
 	case QueenPatern.LR: QueenPaternLR(); break
 	case QueenPatern.PLUNGE: QueenPaternPlunge(); break
 	case QueenPatern.CANNON: QueenPaternCannon(); break
+	case QueenPatern.BEE: QueenPaternBee(); break
 }

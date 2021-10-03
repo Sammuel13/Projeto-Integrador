@@ -1,4 +1,5 @@
 function QueenPaternLR(){
+	hit = 1
 	alarm[4]--
 	alarm[5]--
 	alarm[6]--
@@ -38,10 +39,8 @@ function QueenPaternLR(){
 	}
 	
 	if  alarm[9] <= 0 {
-		show_debug_message("out")
-		
 		alarm[4] = room_speed * 3
-		alarm[5] = room_speed * 5
+		alarm[5] = room_speed * 3.8
 		
 		sprite_index = spr_lanca
 		state = QueenPatern.PLUNGE

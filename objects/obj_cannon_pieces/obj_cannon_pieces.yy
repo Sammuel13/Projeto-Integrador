@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_queen_idle",
-    "path": "sprites/spr_queen_idle/spr_queen_idle.yy",
+    "name": "spr_cannon_pieces",
+    "path": "sprites/spr_cannon_pieces/spr_cannon_pieces.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,11 +20,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -32,7 +28,7 @@
     "path": "folders/Objects/Enemies.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_queen",
+  "name": "obj_cannon_pieces",
   "tags": [],
   "resourceType": "GMObject",
 }

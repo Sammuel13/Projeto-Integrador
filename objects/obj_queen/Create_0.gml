@@ -13,4 +13,5 @@ enum QueenPatern{
 	LR,
 	PLUNGE,
 	CANNON,
+	BEE,
 }
