@@ -62,6 +62,7 @@
     {"id":{"name":"spr_start","path":"sprites/spr_start/spr_start.yy",},"order":2,},
     {"id":{"name":"spr_tileDirt","path":"sprites/spr_tileDirt/spr_tileDirt.yy",},"order":0,},
     {"id":{"name":"obj_leaf","path":"objects/obj_leaf/obj_leaf.yy",},"order":4,},
+    {"id":{"name":"QueenPaternCannon","path":"scripts/QueenPaternCannon/QueenPaternCannon.yy",},"order":4,},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":1,},
     {"id":{"name":"PlayerStateFree","path":"scripts/PlayerStateFree/PlayerStateFree.yy",},"order":1,},
     {"id":{"name":"shoot","path":"scripts/shoot/shoot.yy",},"order":3,},
@@ -80,6 +81,7 @@
     {"id":{"name":"Sprite38","path":"sprites/Sprite38/Sprite38.yy",},"order":10,},
     {"id":{"name":"spr_player_fall","path":"sprites/spr_player_fall/spr_player_fall.yy",},"order":0,},
     {"id":{"name":"QueenPaternWait","path":"scripts/QueenPaternWait/QueenPaternWait.yy",},"order":1,},
+    {"id":{"name":"spr_plunge_wait","path":"sprites/spr_plunge_wait/spr_plunge_wait.yy",},"order":5,},
     {"id":{"name":"AntStateFreeze","path":"scripts/AntStateFreeze/AntStateFreeze.yy",},"order":1,},
     {"id":{"name":"spr_shoot","path":"sprites/spr_shoot/spr_shoot.yy",},"order":4,},
     {"id":{"name":"obj_spikes","path":"objects/obj_spikes/obj_spikes.yy",},"order":1,},
@@ -101,6 +103,7 @@
     {"id":{"name":"room_info","path":"objects/room_info/room_info.yy",},"order":5,},
     {"id":{"name":"tls_Dirt","path":"tilesets/tls_Dirt/tls_Dirt.yy",},"order":0,},
     {"id":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},"order":3,},
+    {"id":{"name":"QueenPaternPlunge","path":"scripts/QueenPaternPlunge/QueenPaternPlunge.yy",},"order":3,},
     {"id":{"name":"room0","path":"rooms/room0/room0.yy",},"order":0,},
   ],
   "Options": [

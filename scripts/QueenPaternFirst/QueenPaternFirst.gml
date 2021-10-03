@@ -16,11 +16,12 @@ function QueenPaternFirst(){
 				image_xscale = -1
 				x = 1728
 				y = 512
-				alarm[4] = room_speed * 3
-				alarm[5] = room_speed * 5
-				alarm[6] = room_speed * 7
-				alarm[7] = room_speed * 9
-				alarm[8] = room_speed * 11
+				alarm[4] = room_speed * 2
+				alarm[5] = room_speed * 3
+				alarm[6] = room_speed * 4
+				alarm[7] = room_speed * 5
+				alarm[8] = room_speed * 6
+				alarm[9] = room_speed * 7
 				state = QueenPatern.LR
 			}
 		}

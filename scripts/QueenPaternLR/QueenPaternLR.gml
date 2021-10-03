@@ -4,6 +4,7 @@ function QueenPaternLR(){
 	alarm[6]--
 	alarm[7]--
 	alarm[8]--
+	alarm[9]--
 	
 	xini = -150
 	xend = 2198
@@ -31,10 +32,19 @@ function QueenPaternLR(){
 		if x <= xini { y = 96 }
 	}
 	
-	if alarm[8] <= 0 {
+	if  alarm[8] <= 0 && alarm[9] > 0 {
 		move_towards_point(xend, y, 64)
 		if x >= xend { y = -160 }
 	}
-
+	
+	if  alarm[9] <= 0 {
+		show_debug_message("out")
+		
+		alarm[4] = room_speed * 3
+		alarm[5] = room_speed * 5
+		
+		sprite_index = spr_lanca
+		state = QueenPatern.PLUNGE
+	}
 
 }

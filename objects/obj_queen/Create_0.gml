@@ -11,4 +11,6 @@ enum QueenPatern{
 	WAIT,
 	FIRST,
 	LR,
+	PLUNGE,
+	CANNON,
 }
