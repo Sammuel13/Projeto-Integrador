@@ -1,6 +1,5 @@
 function aim(){
 	find_nearest2()
-	
 	if !(isnearest == 1 && point_distance(x,y,nearest.x,nearest.y) < homingdis) {
 		with(obj_aim) {
 			size = 100

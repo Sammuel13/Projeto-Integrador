@@ -4,5 +4,9 @@ if hit == 1 {
 }
 
 if hit == 2 {
-	if obj_player.state = PlayerState.HOMING { life-- }
+	if obj_player.state = PlayerState.HOMING && sprite_index != spr_queen_hit {
+		life--
+		sprite_index = spr_queen_hit
+		hit = 0
+	}
 }

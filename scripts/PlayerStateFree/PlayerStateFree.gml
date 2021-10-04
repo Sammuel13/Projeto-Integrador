@@ -26,6 +26,7 @@ function PlayerStateFree() {
 	y = y + vspd
 	
 	aim()
+	if instance_exists(obj_queen) {aim_queen()}
 	
 	if place_meeting(x, y + 1, obj_ground){
 		air_jump = 1
@@ -34,7 +35,7 @@ function PlayerStateFree() {
 			vspd = -jump
 		}
 	} else {
-		if k_jump_air && air_jump == 1 {
+		if k_jump_air && air_jump >= 0 {
 			sprite_index = spr_player_homing
 			change = 0
 			if isnearest == 1 {

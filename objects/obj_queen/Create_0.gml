@@ -2,6 +2,7 @@ spd = 5
 hspd = 0
 vspd = 0
 life = 0
+hit = 0
 x = 1376
 y = -224
 

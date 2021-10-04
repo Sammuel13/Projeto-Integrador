@@ -3,8 +3,9 @@ function PlayerStateHoming(){
 	if sprite_index == spr_player_homing && image_index > image_number - 1 {change = 1}
 	if change == 2 && sprite_index != spr_player_fall {sprite_index = spr_player_homing1}
 	if change == 3 && sprite_index != spr_player_fall {sprite_index = spr_player_homing2}
-
+	
 	aim()
+	if instance_exists(obj_queen) {aim_queen()}
 	
 	if point_distance(x,y,xnearest,ynearest) < homingdis {
 		homing = 1
