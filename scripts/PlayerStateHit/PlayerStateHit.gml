@@ -25,23 +25,26 @@ function PlayerStateHit() {
 	y = y + vspd
 	
 	aim()
+	if instance_exists(obj_queen) {aim_queen()}
 	
 	if place_meeting(x, y + 1, obj_ground){
 		air_jump = 1
+		dbj = 1
 		if k_jump{
 			vspd = -jump
 		}
 	} else {
-		if k_jump_air{
-			if isnearest = 0 { vspd = -jump } else {
+		if k_jump_air {
+			sprite_index = spr_player_homing
+			change = 0
+			if isnearest == 1 {
 				xnearest = nearest.x
 				ynearest = nearest.y
 				xinicial = x
 				yinicial = y
-				alarm[0] = room_speed * 0.5
 				state = PlayerState.HOMING
-				show_debug_message("done")
-			}
+			} else { vspd = -jump; air_jump-- }
+			alarm[0] = room_speed * 0.5
 		}
 	}
 	
@@ -53,11 +56,10 @@ function PlayerStateHit() {
 	}
 
 	if cooldown == 120 {
-		hspd *= -15
-		vspd = -jump
+		hspd = sign(hspd)*7
+		vspd = -jump/2
 		if global.life == 1 {cooldown =0}
 		global.life--
-		
 		
 	}
 
@@ -98,7 +100,7 @@ function PlayerStateHit() {
 		else {image_alpha = 1}
 	}
 
-	if cooldown <= 0 {state = PlayerState.FREE}
+	if cooldown <= 0 {state = PlayerState.FREE; image_alpha = 1}
 
 	cooldown--
 

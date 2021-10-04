@@ -1,1 +1,0 @@
-global.room_atual = room0

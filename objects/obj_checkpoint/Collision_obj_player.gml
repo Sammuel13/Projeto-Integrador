@@ -1,0 +1,1 @@
+global.respawn = [x,y-10,global.room_atual]

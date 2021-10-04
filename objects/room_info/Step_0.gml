@@ -1,1 +1,0 @@
-if room != menu {global.room_atual = room}

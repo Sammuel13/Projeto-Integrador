@@ -11,7 +11,7 @@ homingdis = 250
 again = 0
 nearest = 0
 cooldown = 30
-global.life = 5 //por enquanto
+global.life = 4
 global.score = 0
 global.respawn = [x,y,room0]
 

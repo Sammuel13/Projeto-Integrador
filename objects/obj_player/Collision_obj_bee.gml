@@ -3,4 +3,4 @@ if state == PlayerState.HOMING {
 	again = 1
 	homingdis = 400
 	sprite_index = spr_player_fall
-}
+} else { state = PlayerState.HIT }
