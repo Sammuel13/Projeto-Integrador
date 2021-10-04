@@ -35,7 +35,7 @@ function PlayerStateFree() {
 			vspd = -jump
 		}
 	} else {
-		if k_jump_air && air_jump >= 0 {
+		if k_jump_air {
 			sprite_index = spr_player_homing
 			change = 0
 			if isnearest == 1 {

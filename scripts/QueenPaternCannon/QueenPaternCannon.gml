@@ -55,6 +55,7 @@ function QueenPaternCannon(){
 			}
 			life--
 			state = QueenPatern.BEE
+			sprite_index = spr_boss_tp
 		}
 	}
 }

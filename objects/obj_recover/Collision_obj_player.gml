@@ -1,9 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
-if global.life < 5{
+if global.life < 4{
 	global.life ++;
-	instance_destroy();
-}
-else{
 	instance_destroy();
 }

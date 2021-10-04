@@ -1,3 +1,5 @@
 function QueenPaternBee(){
-	state = QueenPatern.LR
+	if life > 0 {
+		state = QueenPatern.LR
+	}
 }

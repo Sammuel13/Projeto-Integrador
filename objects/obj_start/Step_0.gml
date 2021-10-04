@@ -12,5 +12,5 @@ if (mouse_over == true && click == true)
 {
 	room_restart()
 	//room_goto(global.room_atual)
-	room_goto(room4)
+	room_goto(room0)
 }

@@ -1,7 +1,9 @@
 function QueenPaternLR(){
 	
-	if sprite_index == spr_boss_tp && image_index > image_number - 1 {
-		sprite_index = spr_boss_tp2
+	if sprite_index == spr_boss_tp {
+		if image_index > image_number - 1 {
+			sprite_index = spr_boss_tp2
+		}
 		image_xscale = -1
 		x = 1728
 		y = 512
@@ -11,7 +13,6 @@ function QueenPaternLR(){
 		alarm[7] = room_speed * 5
 		alarm[8] = room_speed * 6
 		alarm[9] = room_speed * 7
-		state = QueenPatern.LR
 	}
 	
 	if sprite_index == spr_boss_tp2 && image_index > image_number - 1 {sprite_index = spr_queen_idle}

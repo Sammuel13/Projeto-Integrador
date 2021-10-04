@@ -3,7 +3,7 @@
     "name": "spr_checkpoint",
     "path": "sprites/spr_checkpoint/spr_checkpoint.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,

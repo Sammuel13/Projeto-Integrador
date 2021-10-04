@@ -6,3 +6,5 @@ switch (state){
 	case QueenPatern.CANNON: QueenPaternCannon(); break
 	case QueenPatern.BEE: QueenPaternBee(); break
 }
+
+show_debug_message(life)
